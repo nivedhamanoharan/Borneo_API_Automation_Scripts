@@ -82,10 +82,10 @@ public class InspectAPI_Tests {
         log.info("Precision validations (Expected : Good Precision)");
         if(precision > 0.70) {
             Assert.assertTrue(true, "Data has good precision");
-            System.out.println("Sensitive Data has good precision : " + precision);
+            log.info("Sensitive Data has good precision : " + precision);
         } else {
             Assert.assertTrue(false, "Data has poor precision");
-            System.out.println("Sensitive Data has poor precision : " + precision);
+            log.info("Sensitive Data has poor precision : " + precision);
         }
 
         log.info("Recall calculations");
@@ -96,10 +96,10 @@ public class InspectAPI_Tests {
         log.info("Recall validations (Expected : Poor Recall)");
         if(recall < 0.50) {
             Assert.assertTrue(true, "Data has poor recall");
-            System.out.println("Sensitive Data has poor recall : " + recall);
+            log.info("Sensitive Data has poor recall : " + recall);
         } else {
             Assert.assertTrue(false, "Data has good recall");
-            System.out.println("Sensitive Data has good recall : " + recall);
+            log.info("Sensitive Data has good recall : " + recall);
         }
 
         log.info("F_Measure calculations");
@@ -110,10 +110,10 @@ public class InspectAPI_Tests {
         log.info("F_Measure validations (Expected : poor f_measure)");
         if(f_measure > 0.70) {
             Assert.assertTrue(false, "Data has good f_measure");
-            System.out.println("Sensitive Data has good f_measure : " + f_measure);
+            log.info("Sensitive Data has good f_measure : " + f_measure);
         } else {
             Assert.assertTrue(true, "Data has poor f_measure");
-            System.out.println("Sensitive Data has poor f_measure : " + f_measure);
+            log.info("Sensitive Data has poor f_measure : " + f_measure);
         }
     }
 }
